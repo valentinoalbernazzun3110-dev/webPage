@@ -1,0 +1,44 @@
+:root{
+    --background: #fbf4d7;
+    --main-text: #4d3a4d;
+    --highlight: #9b0059;
+    --elements: #ff83bc;
+}
+
+html{
+    background-color:var(--background);
+}
+.navbar{
+    background-color: var(--elements) !important;
+}
+
+.dropdown-menu.show {
+    display: flex !important;  
+    flex-direction: row !important;
+    gap: 10px;                 
+    padding: 10px !important;
+    max-width: 90vw;           
+    overflow-x: auto;          
+    white-space: nowrap;
+}
+
+.dropdown-menu .dropdown-item {
+    display: inline-block !important; 
+    width: auto !important;           
+    padding: 0 !important;            
+    background: transparent !important; 
+}
+
+.dropdown-menu .card {
+    margin: 0 !important;
+    width: 5rem;              
+    height: 5rem;             
+    overflow: hidden;         
+}
+
+.dropdown-menu .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        
+    object-position: center;  
+}

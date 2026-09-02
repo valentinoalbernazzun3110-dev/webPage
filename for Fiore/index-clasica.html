@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Fiore</title>
+    <link rel="stylesheet" href="css/styles-clasica.css">
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <a href="#lo-que-me-encanta">Lo que me encanta de ti</a>
+        <a href="#recuerdos">Recuerdos</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Una página hecha con amor</p>
+        <h1>Para mi novia hermosa</h1>
+        <p class="hero-text">
+          Un pequeño rincón en la web dedicado a la persona que hace que todo se sienta más bonito.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card-grid" id="lo-que-me-encanta">
+        <article class="info-card">
+          <img src="img/cutie2.png" height="686" width="2" alt="Fiore vestida elegante.">
+          <div class="card-body">
+            <h2>Lo que me encanta de ti</h2>
+            <p>
+              Tu sonrisa, tus ojos hermosos, tu piel suave, la forma en que compartís todo conmigo
+              y cómo me hacés sentir mariposas en la panza.
+            </p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <img src="img/cutie.png" height= "686" alt="Fiore recién despertando.">
+          <div class="card-body">
+            <h2>Pequeñas cosas</h2>
+            <p>
+              La forma en que te reís, el aroma de tu perfume de jazmín, cómo hablás
+              y cómo iluminás todo lo que te rodea.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="timeline" id="recuerdos">
+        <h2>Recuerdos</h2>
+
+        <div class="memory">
+          <img src="img/birthday.png" width="300" alt="Fiore en el cumpleaños de su mamá.">
+          <div>
+            <h3>El cumpleaños de tu madre</h3>
+            <p>¿Te acordás de cómo pasamos todo el día riéndonos y abrazándonos?</p>
+          </div>
+        </div>
+
+        <div class="memory">
+          <img src="img/first.png" width="300" alt="Cuando todo comenzó.">
+          <div>
+            <h3>Nuestra primera foto</h3>
+            <p>¿Te acordás de ese día tirados en el piso, haciendo pavadas y riéndonos?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery-grid">
+          <img src="img/party.png" height = "326" alt="Saliendo para una fiesta.">
+          <img src="img/shoes.png" width = "100" alt="Zapatos combinados.">
+          <img src="img/nye.png" width = "100" alt="Nuestra primera Nochevieja juntos.">
+          <img src="img/first.png" width = "100" alt="Nuestra primera foto.">
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p>Hecho para Fiore con amor.</p>
+        <p style="font-size:0.85rem;opacity:0.7;"><a href="index.html">Ver la versión nueva de esta página</a></p>
+      </div>
+      <button id="loveButton" type="button">Tocá para una sorpresa</button>
+
+      <dialog id="loveModal" class="modal">
+        <button id="closeModal" class="close-modal" type="button">×</button>
+        <h2>Un corazón para ti</h2>
+        <pre id="nameHeart" class="name-heart" aria-label="Corazón formado con su nombre"></pre>
+      </dialog>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

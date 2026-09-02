@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Lo que me encanta de tí</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Hogar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hogar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="thingsilove.html">Lo que me encanta de tí</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fotitos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <div class="card">
+                                    <img src="img/cutie.png" class="card-img-top" alt="Fiore recién despertando.">
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="card">
+                                    <img src="img/cutie2.png" class="card-img-top" alt="Fiore vestida elegante.">
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="card">
+                                    <img src="img/first.png" class="card-img-top" alt="Nuestra primera foto.">
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="card">
+                                    <img src="img/party.png" class="card-img-top" alt="Saliendo para una fiesta.">
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="card">
+                                    <img src="img/birthday.png" class="card-img-top" alt="Cumpleaños de su mamá.">
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="card">
+                                    <img src="img/shoes.png" class="card-img-top" alt="Zapatos combinados.">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="eyebrow">Una lista que se sigue escribiendo</p>
+            <h1>Lo que me encanta de vos</h1>
+            <p class="hero-text">
+                Podría hacer esta lista todos los días y nunca se repetiría. Acá van algunas de mis favoritas.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-wrap">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <img src="img/cutie2.png" alt="Fiore vestida elegante.">
+                        <div class="card-body">
+                            <h3>Tu sonrisa</h3>
+                            <p>
+                                Tu sonrisa, tus ojos hermosos, tu piel suave, la forma en que compartís todo
+                                conmigo y cómo me hacés sentir mariposas en la panza.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <img src="img/cutie.png" alt="Fiore recién despertando.">
+                        <div class="card-body">
+                            <h3>Pequeñas cosas</h3>
+                            <p>
+                                La forma en que te reís, el aroma de tu perfume de jazmín, cómo hablás
+                                y cómo iluminás todo lo que te rodea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <img src="img/party.png" alt="Saliendo para una fiesta.">
+                        <div class="card-body">
+                            <h3>Cómo disfrutás cada momento</h3>
+                            <p>
+                                Le ponés ganas a todo: a una fiesta, a un plan improvisado, a un día
+                                cualquiera. Se te nota y se contagia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-card">
+                        <img src="img/shoes.png" alt="Zapatos combinados.">
+                        <div class="card-body">
+                            <h3>Los detalles</h3>
+                            <p>
+                                Hasta las cosas más chiquitas, como combinar los zapatos, las hacés con
+                                una dedicación que me encanta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="ver-mas" href="index.html">&larr; Volver al hogar</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p>Hecho para Fiore con amor.</p>
+        </div>
+        <button id="loveButton" type="button">Tocá para una sorpresa</button>
+
+        <dialog id="loveModal" class="modal">
+            <button id="closeModal" class="close-modal" type="button">×</button>
+            <h2>Un corazón para ti</h2>
+            <pre id="nameHeart" class="name-heart" aria-label="Corazón formado con su nombre"></pre>
+        </dialog>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
